@@ -1,0 +1,68 @@
+{
+  "resourceType": "Observation",
+  "id": "Pulse4Example",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/Pulse-Rate"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Pulse4Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Pulse4Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Pulse-Rate.html\">Observation Pulse Rate</a></p></div><p><b>Performer</b>: Hospital specialist (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#309395003)</span></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Heart rate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8867-4; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#78564009 &quot;Heart rate measured at systemic artery (observable entity)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample.html\">Patient/PatientExample</a> &quot; NORMANN&quot;</p><p><b>effective</b>: 2022-10-16 12:12:29-0900</p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-Pulse1Example.html\">Observation/Pulse1Example</a></li><li><a href=\"Observation-Pulse2Example.html\">Observation/Pulse2Example</a></li><li><a href=\"Observation-Pulse3Example.html\">Observation/Pulse3Example</a></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://example.org/StructureDefinition/ExtPerformer",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "309395003",
+            "display": "Hospital specialist (occupation)"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8867-4",
+        "display": "Heart rate"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "78564009",
+        "display": "Heart rate measured at systemic artery (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientExample"
+  },
+  "effectiveDateTime": "2022-10-16T12:12:29-09:00",
+  "hasMember": [
+    {
+      "reference": "Observation/Pulse1Example"
+    },
+    {
+      "reference": "Observation/Pulse2Example"
+    },
+    {
+      "reference": "Observation/Pulse3Example"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+/* #segment-footer > .container {background-color: #0000ff;}
+      .navbar-inverse {background-color: #0000ff}
+      /* Header/Logo Title */
+
+:root {
+            --ig-status-text-color: #000000ab; /* 1. IG Title and status text color */
+            /*--ig-status-text-align: center; */
+            --navbar-bg-color: #0000ff; /* 2. Header container color */
+            --footer-bg-color: #FFFFFF; /* 3. Footer background color*/
+            --footer-container-bg-color: #0000ff; /* 4. Footer container color */
+            --stripe-bg-color: #FFFFFF; /* 5. Header strip color */
+            --btn-hover-color: #001e80;  /* 6. Menu button hover color */
+            --btn-active-color: #070064; /* 7. Menu button active color */
+            --btn-text-color: #cacce4; /* 8. Menu button text color */
+      /*      --btn-gradient-start-color: #87ceeb; /* 9. Menu item gradient start color */
+      /*      --btn-gradient-end-color: #8cd0f0; /* 10. Menu item gradient end  color */
+      /*      --btn-gradient-start-color-alpha: #d2b48c; /* 11. Menu item gradient start color (with alpha) */
+      /*      --btn-gradient-end-color-alpha: #fa8072; /* 12. Menu item gradient end color (with alpha) */
+      /*--link-color: #2f4f4f; /* 13. Hyperlink text color */
+      /*--link-hover-color: #8b0000; /* 14. Hyperlink text hover color */
+      /*      --publish-box-bg-color: #ffff00; /* 15. Publish box background color */
+      /*      --publish-box-border: 1px solid #ff4500; /* 16.  Publish box border definition */
+      /*      --toc-box-bg-color: #98fb98; /* 17.  TOC box background color */
+      /*      --toc-box-border: 1px solid #2e8b57; /* 18. TOC box border definition */
+      /*      --stu-note-background-color: #8b4513; /* 19. (STU) Note box background color */
+      /*      --stu-note-border-left-color: #ffa0ff; /* 20. (STU) Note box border color */
+            --ig-header-color: #FFFFFF; /* 21. Header color (sides) */
+            --ig-header-container-color: #FFFFFF; /* 22. Header container color (center) */
+      /*      --footer-nav-bg-color: #f5f5f5; /* 23. Footer navigation background color*/
+      /*      --footer-text-color: #777777; /* 24. Footer highlight font color */
+      /*      --footer-hyperlink-text-color: #800000; /* 25. Footer hyperlinks font color */
+      /*      --footer-highlight-text-color: #ffff77; /* 26. Footer highlight font color */
+      /*      --breadcrumb-bg-color: #506070  ; /* 27. Breadcrumb background color */
+      /*      --breadcrumb-text-color: #302010; /* 28. Breadcrumb font color */
+      /*      --dragon-background-color: #ebe7ee; /* 29. Dragon background color */
+      /*      --dragon-font-color: #400070; /* 30. Dragon font color */
+        }
+
+
+/*.header {
+      padding: 30px;
+      text-align: center;
+    
+      color: #000000ab;
+      font-size: 30px;
+    } 
+/*.logo {
+   margin-bottom: 5px;
+     
+    
+    } */
+
+
+#logo {
+      float: center;
+      margin-top: 6px;
+      margin-left: 0px;
+      margin-bottom: 4px;
+      display: block;
+    }
+#logo img {
+      max-width: 100%;
+    }
+    
+#project-nav {
+      line-height: 40px;
+      float: left;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      color: #808080;
+    }
+#project-logo {
+      float: left;
+      margin-left: 0px;
+    }
+    
+#family-nav {
+        line-height: 40px;
+        float: right;
+        margin-top: 55px;
+        margin-bottom: 8px;
+        color: #808080;
+    }
+    
+#family-logo {
+      float: right;
+      margin-right: 8px;
+    }
+    
+#ig-status {
+      line-height: 40px;
+      margin-top: 60px;
+      color: #000000ab;
+      text-align: center;
+      height: 20px;
+    }
+    
+    #stripe {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 8px;
+      background: var(--stripe-bg-color);
+
+    }
+    #publish-box {
+      background-color: var(--publish-box-bg-color);
+      border: var(--publish-box-border);
+      padding: 5px;
+    }
+    
+    .dragon {
+      border: 1px solid maroon;
+      padding: 10px;
+      background-color: var(--dragon-background-color);
+      min-height: 160px;
+      color: var(--dragon-text-color);
+    }
+    
+    .dragon::before {
+      content: "";
+      background-image: url('../images/dragon.png');
+      background-size: 150px 150px;
+      display: inline-block;
+      margin-right: 10px;
+      width: 150px;
+      height: 150px;
+    }
+    
+    .note-to-balloters, .stu-note {
+        margin: 5px;
+        padding: 10px;
+        border-left-style: solid;
+        background-color: var(--stu-note-background-color);
+        border-left-color: var(--stu-note-border-left-color);
+    }
+    
+    .stu-note::before {
+      white-space: pre;
+      content: "Note\A ";
+      background-color: yellow;
+      color: red;
+      font-weight: bold;
+    }
+    
+    .note-to-balloters::before {
+      white-space: pre;
+      content: "Note to Balloters\A ";
+      background-color: yellow;
+      color: red;
+      font-weight: bold;
+    }
+    
+    blockquote.stu-note {
+          margin: 5px;
+          padding:10px;
+        background-color: var(--stu-note-background-color);
+        border-left-color: var(--stu-note-border-left-color);
+    }

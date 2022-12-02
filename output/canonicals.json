@@ -1,0 +1,107 @@
+[
+  {
+    "id": "fhir.pulse",
+    "type": "ImplementationGuide",
+    "url": "http://example.org/ImplementationGuide/fhir.pulse",
+    "version": "0.1.0",
+    "name": "PulseIG"
+  },
+  {
+    "id": "Apatient-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/Apatient-profile",
+    "version": "0.1.0",
+    "name": "PatientProfile"
+  },
+  {
+    "id": "ExtDeviceCode",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/ExtDeviceCode",
+    "version": "0.1.0",
+    "name": "ExtDevice"
+  },
+  {
+    "id": "ExtPerformer",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/ExtPerformer",
+    "version": "0.1.0",
+    "name": "ExtPerformer"
+  },
+  {
+    "id": "MeasurementSettingExt",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/MeasurementSettingExt",
+    "version": "0.1.0",
+    "name": "ExtSetting"
+  },
+  {
+    "id": "Pulse-Rate",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/Pulse-Rate",
+    "version": "0.1.0",
+    "name": "PulseRate"
+  },
+  {
+    "id": "Loinc-Pulse-vs",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/Loinc-Pulse-vs",
+    "version": "0.1.0",
+    "name": "LOINCpulserateVS"
+  },
+  {
+    "id": "MeasSettingVS",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/MeasSettingVS",
+    "version": "0.1.0",
+    "name": "SettingVS"
+  },
+  {
+    "id": "PerformerVS",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/PerformerVS",
+    "version": "0.1.0",
+    "name": "PerformerVS"
+  },
+  {
+    "id": "PrePostPulse",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/PrePostPulse",
+    "version": "0.1.0",
+    "name": "SCTpulserateVS"
+  },
+  {
+    "id": "Predicates",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/Predicates",
+    "version": "0.1.0",
+    "name": "SCTpredicatesVS"
+  },
+  {
+    "id": "heartRateMeasBodyLocationPrecoordVS",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/heartRateMeasBodyLocationPrecoordVS",
+    "version": "0.1.0",
+    "name": "BodySiteVS"
+  },
+  {
+    "id": "heartRateMeasDeviceVS",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/heartRateMeasDeviceVS",
+    "version": "0.1.0",
+    "name": "DeviceVS"
+  },
+  {
+    "id": "heartRateMeasMethodVS",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/heartRateMeasMethodVS",
+    "version": "0.1.0",
+    "name": "MethodVS"
+  },
+  {
+    "id": "pulse-rate",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/pulse-rate",
+    "version": "0.1.0",
+    "name": "SCTprecoordinatedVS"
+  }
+]

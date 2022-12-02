@@ -1,0 +1,63 @@
+{
+  "resourceType": "Patient",
+  "id": "PatientExample",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/Apatient-profile"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Ola A. Normann </b> male, DoB: 1914-05-17</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">123 Snøveien Vinterby 12345 NO </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Languages spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes: {urn:ietf:bcp:47 no-NO}\">Norwegian</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient contact\">Contact</td><td colspan=\"3\"><ul><li>ph: 555-555-5555(HOME)</li><li><a href=\"mailto:ola.normann@example.com\">ola.normann@example.com</a></li></ul></td></tr></table></div>"
+  },
+  "name": [
+    {
+      "family": "Normann",
+      "given": [
+        "Ola",
+        "A."
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1914-05-17",
+  "address": [
+    {
+      "line": [
+        "123 Snøveien"
+      ],
+      "city": "Vinterby",
+      "postalCode": "12345",
+      "country": "NO"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "555-555-5555",
+          "use": "home"
+        },
+        {
+          "system": "email",
+          "value": "ola.normann@example.com"
+        }
+      ]
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "no-NO",
+            "display": "Norwegian (Region=Norway)"
+          }
+        ],
+        "text": "Norwegian"
+      }
+    }
+  ]
+}

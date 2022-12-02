@@ -1,0 +1,148 @@
+{
+  "resourceType": "Observation",
+  "id": "Pulse3Example",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/Pulse-Rate"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Pulse3Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Pulse3Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Pulse-Rate.html\">Observation Pulse Rate</a></p></div><p><b>Measurment Device</b>: Blood pressure cuff inflator, automatic (physical object) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#720872005)</span></p><p><b>Measurement Setting</b>: Home (environment) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#264362003)</span></p><p><b>Performer</b>: Community nurse (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#224540001)</span></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Heart rate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8867-4; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#78564009 &quot;Heart rate measured at systemic artery (observable entity)&quot;; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#78564009:704321009=439708006,370134009=123029007,370132008=258983007,424226004=720872005 &quot;Pulse rate using Blood pressure cuff inflator, automatic to degree of beats/min with time aspect of Single point in time characterizes Home visit&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample.html\">Patient/PatientExample</a> &quot; NORMANN&quot;</p><p><b>effective</b>: 2022-10-16 12:12:29-0900</p><p><b>bodySite</b>: Systemic arterial structure (body structure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#281159003)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Heart rate measured at systemic artery (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#78564009)</span></p><p><b>value</b>: 104 beats/minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Beats}/min = '{Beats}/min')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Heart rate measured at systemic artery (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#78564009)</span></p><p><b>value</b>: 110 beats/minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Beats}/min = '{Beats}/min')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Heart rate measured at systemic artery (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#78564009)</span></p><p><b>value</b>: 115 beats/minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Beats}/min = '{Beats}/min')</span></p></blockquote></div>"
+  },
+  "extension": [
+    {
+      "url": "http://example.org/StructureDefinition/ExtDeviceCode",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "720872005",
+            "display": "Blood pressure cuff inflator, automatic (physical object)"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://example.org/StructureDefinition/MeasurementSettingExt",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "264362003",
+            "display": "Home (environment)"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://example.org/StructureDefinition/ExtPerformer",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "224540001",
+            "display": "Community nurse (occupation)"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8867-4",
+        "display": "Heart rate"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "78564009",
+        "display": "Heart rate measured at systemic artery (observable entity)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "78564009:704321009=439708006,370134009=123029007,370132008=258983007,424226004=720872005",
+        "display": "Pulse rate using Blood pressure cuff inflator, automatic to degree of beats/min with time aspect of Single point in time characterizes Home visit"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientExample"
+  },
+  "effectiveDateTime": "2022-10-16T12:12:29-09:00",
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "281159003",
+        "display": "Systemic arterial structure (body structure)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "78564009",
+            "display": "Heart rate measured at systemic artery (observable entity)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 104,
+        "unit": "beats/minute",
+        "system": "http://unitsofmeasure.org",
+        "code": "{Beats}/min"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "78564009",
+            "display": "Heart rate measured at systemic artery (observable entity)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 110,
+        "unit": "beats/minute",
+        "system": "http://unitsofmeasure.org",
+        "code": "{Beats}/min"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "78564009",
+            "display": "Heart rate measured at systemic artery (observable entity)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 115,
+        "unit": "beats/minute",
+        "system": "http://unitsofmeasure.org",
+        "code": "{Beats}/min"
+      }
+    }
+  ]
+}

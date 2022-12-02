@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "MeasSettingVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/285201006\">285201006</a></td><td>Hospital environment (environment)</td></tr><tr><td><a href=\"http://snomed.info/id/264362003\">264362003</a></td><td>Home (environment)</td></tr><tr><td><a href=\"http://snomed.info/id/257585005\">257585005</a></td><td>Clinic (environment)</td></tr></table></li></ul></div>"
+  },
+  "url": "http://example.org/ValueSet/MeasSettingVS",
+  "version": "0.1.0",
+  "name": "SettingVS",
+  "title": "Measurement Setting value set",
+  "status": "active",
+  "date": "2022-12-01T10:36:50+01:00",
+  "publisher": "ehelse",
+  "contact": [
+    {
+      "name": "ehelse",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "ehelse.no"
+        }
+      ]
+    }
+  ],
+  "description": "SELECT SNOMED CT code system values that contains terms that indicate the surroundings the individual was in during the measurement (i.e. home, clinic, hospital, etc.).",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "285201006",
+            "display": "Hospital environment (environment)"
+          },
+          {
+            "code": "264362003",
+            "display": "Home (environment)"
+          },
+          {
+            "code": "257585005",
+            "display": "Clinic (environment)"
+          }
+        ]
+      }
+    ]
+  }
+}

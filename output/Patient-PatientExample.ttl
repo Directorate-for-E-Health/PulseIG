@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Patient/PatientExample> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PatientExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://example.org/StructureDefinition/Apatient-profile";
+       fhir:index 0;
+       fhir:link <http://example.org/StructureDefinition/Apatient-profile>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Ola A. Normann </b> male, DoB: 1914-05-17</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">123 Snøveien Vinterby 12345 NO </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Languages spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes: {urn:ietf:bcp:47 no-NO}\">Norwegian</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient contact\">Contact</td><td colspan=\"3\"><ul><li>ph: 555-555-5555(HOME)</li><li><a href=\"mailto:ola.normann@example.com\">ola.normann@example.com</a></li></ul></td></tr></table></div>"
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Normann" ];
+     fhir:HumanName.given [
+       fhir:value "Ola";
+       fhir:index 0
+     ], [
+       fhir:value "A.";
+       fhir:index 1
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1914-05-17"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "123 Snøveien";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Vinterby" ];
+     fhir:Address.postalCode [ fhir:value "12345" ];
+     fhir:Address.country [ fhir:value "NO" ]
+  ];
+  fhir:Patient.contact [
+     fhir:index 0;
+     fhir:Patient.contact.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "555-555-5555" ];
+       fhir:ContactPoint.use [ fhir:value "home" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "ola.normann@example.com" ]
+     ]
+  ];
+  fhir:Patient.communication [
+     fhir:index 0;
+     fhir:Patient.communication.language [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:ietf:bcp:47" ];
+         fhir:Coding.code [ fhir:value "no-NO" ];
+         fhir:Coding.display [ fhir:value "Norwegian (Region=Norway)" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Norwegian" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/Patient/PatientExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

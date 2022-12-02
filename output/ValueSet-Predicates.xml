@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Predicates"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/78564009:704321009=449263002,370134009=123029007,370132008=258983007">78564009:704321009=449263002,370134009=123029007,370132008=258983007</a></td><td>Pulse rate where Characterizes = Auscultation of heart, Time aspect = Single point in time, and Scale type = beats/min</td></tr><tr><td><a href="http://snomed.info/id/78564009:704321009=72027000,370134009=123029007,370132008=258983007,704327008=45631007">78564009:704321009=72027000,370134009=123029007,370132008=258983007,704327008=45631007</a></td><td>Pulse rate where Characterizes = Radial pulse taking, Time aspect = Single point in time, Scale type = beats/min, and Direct site = Radial artery</td></tr><tr><td><a href="http://snomed.info/id/78564009:370134009=123029007,246514001=258983007,370132008=30766002,424226004=720872005,246501002=1156040003">78564009:370134009=123029007,246514001=258983007,370132008=30766002,424226004=720872005,246501002=1156040003</a></td><td>Pulse rate where Time aspect = Single point in time, Units = beats/min, Scale type = Quantitative, Using device = Blood pressure cuff inflator, automatic, and Technique = Self reported</td></tr><tr><td><a href="http://snomed.info/id/78564009:370134009=123029007,246514001=258983007,370132008=30766002,424226004=448703006,246501002=1156040003">78564009:370134009=123029007,246514001=258983007,370132008=30766002,424226004=448703006,246501002=1156040003</a></td><td>Pulse rate where Time aspect = Single point in time, Units = beats/min, Scale type = Quantitative, Using device = Oxygen saturation analyser, and Technique = Self reported</td></tr><tr><td><a href="http://snomed.info/id/78564009:704321009=439708006,370134009=123029007,370132008=258983007,424226004=448703006">78564009:704321009=439708006,370134009=123029007,370132008=258983007,424226004=448703006</a></td><td>Pulse rate where Characterizes = Home visit, Time aspect = Single point in time, Scale type = beats/min, and Using device = Oxygen saturation analyser</td></tr><tr><td><a href="http://snomed.info/id/78564009:704321009=72027000,370134009=123029007,370132008=258983007">78564009:704321009=72027000,370134009=123029007,370132008=258983007</a></td><td>Pulse rate where Characterizes = Radial pulse taking, Time aspect = Single point in time, and Scale type = beats/min</td></tr><tr><td><a href="http://snomed.info/id/78564009:704321009=252417001,370134009=123029007,370132008=258983007,424226004=86184003">78564009:704321009=252417001,370134009=123029007,370132008=258983007,424226004=86184003</a></td><td>Pulse rate where Characterizes = 24 Hour ECG, Time aspect = Single point in time, Scale type = beats/min, and Using device = Electrocardiographic monitor and recorder</td></tr><tr><td><a href="http://snomed.info/id/78564009:424226004=720872005,370134009=123029007,370132008=258983007,246501002=1156040003">78564009:424226004=720872005,370134009=123029007,370132008=258983007,246501002=1156040003</a></td><td>Pulse rate where Using device = Blood pressure cuff inflator, automatic, Time aspect = Single point in time, Scale type = beats/min, and Technique = Self reported</td></tr><tr><td><a href="http://snomed.info/id/78564009:704321009=439708006,370134009=123029007,370132008=258983007,424226004=720872005">78564009:704321009=439708006,370134009=123029007,370132008=258983007,424226004=720872005</a></td><td>Pulse rate where Characterizes = Home visit, Time aspect = Single point in time, Scale type = beats/min, and Using device = Blood pressure cuff inflator, automatic</td></tr><tr><td><a href="http://snomed.info/id/78564009:370134009=123029007,246514001=258983007,370132008=30766002,704321009=439708006,704321009=72027000">78564009:370134009=123029007,246514001=258983007,370132008=30766002,704321009=439708006,704321009=72027000</a></td><td>Pulse rate where Time aspect = Single point in time, Units = beats/min, Scale type = Quantitative, Characterizes = Home visit, and Characterizes = Radial pulse taking</td></tr><tr><td><a href="http://snomed.info/id/78564009:704321009=449263002,370134009=123029007,370132008=258983007,704321009=439708006">78564009:704321009=449263002,370134009=123029007,370132008=258983007,704321009=439708006</a></td><td>Pulse rate where Characterizes = Auscultation of heart, Time aspect = Single point in time, Scale type = beats/min, and Characterizes = Home visit</td></tr><tr><td><a href="http://snomed.info/id/78564009:370134009=123029007,246514001=258983007,370132008=30766002,704321009=439708006,704321009=449263002">78564009:370134009=123029007,246514001=258983007,370132008=30766002,704321009=439708006,704321009=449263002</a></td><td>Pulse rate where Time aspect = Single point in time, Units = beats/min, Scale type = Quantitative, Characterizes = Home visit, and Characterizes = Auscultation of heart</td></tr><tr><td><a href="http://snomed.info/id/78564009:370134009=123029007,246514001=258983007,370132008=30766002">78564009:370134009=123029007,246514001=258983007,370132008=30766002</a></td><td>Pulse rate where Time aspect = Single point in time, Units = beats/min, and Scale type = Quantitative</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/Predicates"/>
+  <version value="0.1.0"/>
+  <name value="SCTpredicatesVS"/>
+  <title value="Postcoordinated"/>
+  <status value="active"/>
+  <date value="2022-12-01T10:36:50+01:00"/>
+  <publisher value="ehelse"/>
+  <contact>
+    <name value="ehelse"/>
+    <telecom>
+      <system value="url"/>
+      <value value="ehelse.no"/>
+    </telecom>
+  </contact>
+  <description value="Value sets with postcoordinated expressions from SNOMED CT representing different types of pulse rate measurements."/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="78564009:704321009=449263002,370134009=123029007,370132008=258983007"/>
+      </concept>
+      <concept>
+        <code value="78564009:704321009=72027000,370134009=123029007,370132008=258983007,704327008=45631007"/>
+      </concept>
+      <concept>
+        <code value="78564009:370134009=123029007,246514001=258983007,370132008=30766002,424226004=720872005,246501002=1156040003"/>
+      </concept>
+      <concept>
+        <code value="78564009:370134009=123029007,246514001=258983007,370132008=30766002,424226004=448703006,246501002=1156040003"/>
+      </concept>
+      <concept>
+        <code value="78564009:704321009=439708006,370134009=123029007,370132008=258983007,424226004=448703006"/>
+      </concept>
+      <concept>
+        <code value="78564009:704321009=72027000,370134009=123029007,370132008=258983007"/>
+      </concept>
+      <concept>
+        <code value="78564009:704321009=252417001,370134009=123029007,370132008=258983007,424226004=86184003"/>
+      </concept>
+      <concept>
+        <code value="78564009:424226004=720872005,370134009=123029007,370132008=258983007,246501002=1156040003"/>
+      </concept>
+      <concept>
+        <code value="78564009:704321009=439708006,370134009=123029007,370132008=258983007,424226004=720872005"/>
+      </concept>
+      <concept>
+        <code value="78564009:370134009=123029007,246514001=258983007,370132008=30766002,704321009=439708006,704321009=72027000"/>
+      </concept>
+      <concept>
+        <code value="78564009:704321009=449263002,370134009=123029007,370132008=258983007,704321009=439708006"/>
+      </concept>
+      <concept>
+        <code value="78564009:370134009=123029007,246514001=258983007,370132008=30766002,704321009=439708006,704321009=449263002"/>
+      </concept>
+      <concept>
+        <code value="78564009:370134009=123029007,246514001=258983007,370132008=30766002"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

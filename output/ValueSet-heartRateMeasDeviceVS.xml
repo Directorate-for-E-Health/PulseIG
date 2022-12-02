@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="heartRateMeasDeviceVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/467178001">467178001</a></td><td>Bedside heart rate monitor (physical object)</td></tr><tr><td><a href="http://snomed.info/id/43770009">43770009</a></td><td>Doppler device (physical object)</td></tr><tr><td><a href="http://snomed.info/id/86184003">86184003</a></td><td>Electrocardiographic monitor and recorder (physical object)</td></tr><tr><td><a href="http://snomed.info/id/469801002">469801002</a></td><td>Invasive blood pressure monitor (physical object)</td></tr><tr><td><a href="http://snomed.info/id/258057004">258057004</a></td><td>Non-invasive blood pressure monitor (physical object)</td></tr><tr><td><a href="http://snomed.info/id/448703006">448703006</a></td><td>Pulse oximeter (physical object)</td></tr><tr><td><a href="http://snomed.info/id/466093008">466093008</a></td><td>Automatic-inflation electronic sphygmomanometer, non-portable (physical object)</td></tr><tr><td><a href="http://snomed.info/id/466086009">466086009</a></td><td>Automatic-inflation electronic sphygmomanometer, portable, arm/wrist (physical object)</td></tr><tr><td><a href="http://snomed.info/id/466139008">466139008</a></td><td>Automatic-inflation electronic sphygmomanometer, portable, finger (physical object)</td></tr><tr><td><a href="http://snomed.info/id/711337005">711337005</a></td><td>Implantable pulmonary artery pressure monitoring system (physical object)</td></tr><tr><td><a href="http://snomed.info/id/774007007">774007007</a></td><td>Wearable neonatal heart rate meter (physical object)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/heartRateMeasDeviceVS"/>
+  <version value="0.1.0"/>
+  <name value="DeviceVS"/>
+  <title value="Device"/>
+  <status value="active"/>
+  <date value="2022-12-01T10:36:50+01:00"/>
+  <publisher value="ehelse"/>
+  <contact>
+    <name value="ehelse"/>
+    <telecom>
+      <system value="url"/>
+      <value value="ehelse.no"/>
+    </telecom>
+  </contact>
+  <description value="SELECT SNOMED CT code system values that describe the instrument used to measure the heart rate."/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="467178001"/>
+        <display value="Bedside heart rate monitor (physical object)"/>
+      </concept>
+      <concept>
+        <code value="43770009"/>
+        <display value="Doppler device (physical object)"/>
+      </concept>
+      <concept>
+        <code value="86184003"/>
+        <display value="Electrocardiographic monitor and recorder (physical object)"/>
+      </concept>
+      <concept>
+        <code value="469801002"/>
+        <display value="Invasive blood pressure monitor (physical object)"/>
+      </concept>
+      <concept>
+        <code value="258057004"/>
+        <display value="Non-invasive blood pressure monitor (physical object)"/>
+      </concept>
+      <concept>
+        <code value="448703006"/>
+        <display value="Pulse oximeter (physical object)"/>
+      </concept>
+      <concept>
+        <code value="466093008"/>
+        <display value="Automatic-inflation electronic sphygmomanometer, non-portable (physical object)"/>
+      </concept>
+      <concept>
+        <code value="466086009"/>
+        <display value="Automatic-inflation electronic sphygmomanometer, portable, arm/wrist (physical object)"/>
+      </concept>
+      <concept>
+        <code value="466139008"/>
+        <display value="Automatic-inflation electronic sphygmomanometer, portable, finger (physical object)"/>
+      </concept>
+      <concept>
+        <code value="711337005"/>
+        <display value="Implantable pulmonary artery pressure monitoring system (physical object)"/>
+      </concept>
+      <concept>
+        <code value="774007007"/>
+        <display value="Wearable neonatal heart rate meter (physical object)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

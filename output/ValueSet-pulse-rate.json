@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "pulse-rate",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  78564009 (Pulse rate)</li></ul></div>"
+  },
+  "url": "http://example.org/ValueSet/pulse-rate",
+  "version": "0.1.0",
+  "name": "SCTprecoordinatedVS",
+  "title": "Precoordinated",
+  "status": "active",
+  "date": "2022-12-01T10:36:50+01:00",
+  "publisher": "ehelse",
+  "contact": [
+    {
+      "name": "ehelse",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "ehelse.no"
+        }
+      ]
+    }
+  ],
+  "description": "Value sets with precoordinated expressions from SNOMED CT representing different types of pulse rate measurements.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "78564009"
+          }
+        ]
+      }
+    ]
+  }
+}

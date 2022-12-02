@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ValueSet/heartRateMeasMethodVS> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "heartRateMeasMethodVS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://snomed.info/sct/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>37931006</td><td>Auscultation (procedure)</td></tr><tr><td>268447006</td><td>Doppler studies (procedure)</td></tr><tr><td>29303009</td><td>Electrocardiographic procedure (procedure)</td></tr><tr><td>13385008</td><td>Mediate auscultation (procedure)</td></tr><tr><td>264598005</td><td>Oximetry (procedure)</td></tr><tr><td>113011001</td><td>Palpation (procedure)</td></tr><tr><td>277917001</td><td>Thoracic impedance cardiography (procedure)</td></tr><tr><td>239516002</td><td>Monitoring procedure (regime/therapy)</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://example.org/ValueSet/heartRateMeasMethodVS"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "MethodVS"];
+  fhir:ValueSet.title [ fhir:value "Method"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-12-01T10:36:50+01:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "ehelse"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "ehelse" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "ehelse.no" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "SELECT SNOMED CT code system values that describe how the heart rate was measured."];
+  fhir:ValueSet.copyright [ fhir:value "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct/" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "37931006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Auscultation (procedure)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "268447006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Doppler studies (procedure)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "29303009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Electrocardiographic procedure (procedure)" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13385008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mediate auscultation (procedure)" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264598005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oximetry (procedure)" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "113011001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Palpation (procedure)" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "277917001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thoracic impedance cardiography (procedure)" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "239516002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monitoring procedure (regime/therapy)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/ValueSet/heartRateMeasMethodVS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
