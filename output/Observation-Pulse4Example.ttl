@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Observation/Pulse4Example> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Pulse4Example"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://example.org/StructureDefinition/Pulse-Rate";
+       fhir:index 0;
+       fhir:link <http://example.org/StructureDefinition/Pulse-Rate>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Pulse4Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Pulse4Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Pulse-Rate.html\">Observation Pulse Rate</a></p></div><p><b>Performer</b>: Hospital specialist (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#309395003)</span></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Heart rate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8867-4; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#78564009 &quot;Heart rate measured at systemic artery (observable entity)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample.html\">Patient/PatientExample</a> &quot; NORMANN&quot;</p><p><b>effective</b>: 2022-10-16 12:12:29-0900</p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-Pulse1Example.html\">Observation/Pulse1Example</a></li><li><a href=\"Observation-Pulse2Example.html\">Observation/Pulse2Example</a></li><li><a href=\"Observation-Pulse3Example.html\">Observation/Pulse3Example</a></li></ul></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://example.org/StructureDefinition/ExtPerformer" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:309395003;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "309395003" ];
+         fhir:Coding.display [ fhir:value "Hospital specialist (occupation)" ]
+       ]
+     ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ];
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:8867-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "8867-4" ];
+       fhir:Coding.display [ fhir:value "Heart rate" ]
+     ], [
+       fhir:index 1;
+       a sct:78564009;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "78564009" ];
+       fhir:Coding.display [ fhir:value "Heart rate measured at systemic artery (observable entity)" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://example.org/Patient/PatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/PatientExample" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-10-16T12:12:29-09:00"^^xsd:dateTime];
+  fhir:Observation.hasMember [
+     fhir:index 0;
+     fhir:link <http://example.org/Observation/Pulse1Example>;
+     fhir:Reference.reference [ fhir:value "Observation/Pulse1Example" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://example.org/Observation/Pulse2Example>;
+     fhir:Reference.reference [ fhir:value "Observation/Pulse2Example" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://example.org/Observation/Pulse3Example>;
+     fhir:Reference.reference [ fhir:value "Observation/Pulse3Example" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/Observation/Pulse4Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

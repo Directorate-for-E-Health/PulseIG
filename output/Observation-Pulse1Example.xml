@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Pulse1Example"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/Pulse-Rate"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Pulse1Example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Pulse1Example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Pulse-Rate.html">Observation Pulse Rate</a></p></div><p><b>Measurment Device</b>: Pulse oximeter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#448703006)</span></p><p><b>Measurement Setting</b>: Home (environment) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#264362003)</span></p><p><b>Performer</b>: Community nurse (occupation) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#224540001)</span></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Heart rate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8867-4; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#78564009 &quot;Heart rate measured at systemic artery (observable entity)&quot;; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#78564009:704321009=439708006,370134009=123029007,370132008=258983007,424226004=448703006 &quot;Pulse rate using Oxygen saturation analyzer to degree of beats/min with time aspect of Single point in time characterizes Home visit&quot;)</span></p><p><b>subject</b>: <a href="Patient-PatientExample.html">Patient/PatientExample</a> &quot; NORMANN&quot;</p><p><b>effective</b>: 2022-10-16 12:12:29-0900</p><p><b>value</b>: 112 beats/minute</p><p><b>bodySite</b>: Systemic arterial structure (body structure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#281159003)</span></p></div>
+  </text>
+  <extension url="http://example.org/StructureDefinition/ExtDeviceCode">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="448703006"/>
+        <display value="Pulse oximeter"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/MeasurementSettingExt">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="264362003"/>
+        <display value="Home (environment)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/ExtPerformer">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="224540001"/>
+        <display value="Community nurse (occupation)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8867-4"/>
+      <display value="Heart rate"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="78564009"/>
+      <display value="Heart rate measured at systemic artery (observable entity)"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="78564009:704321009=439708006,370134009=123029007,370132008=258983007,424226004=448703006"/>
+      <display value="Pulse rate using Oxygen saturation analyzer to degree of beats/min with time aspect of Single point in time characterizes Home visit"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+  </subject>
+  <effectiveDateTime value="2022-10-16T12:12:29-09:00"/>
+  <valueQuantity>
+    <value value="112"/>
+    <unit value="beats/minute"/>
+  </valueQuantity>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="281159003"/>
+      <display value="Systemic arterial structure (body structure)"/>
+    </coding>
+  </bodySite>
+</Observation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Loinc-Pulse-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://loinc.org"><code>http://loinc.org</code></a> where ancestor  =  8867-4</li><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/8867-4/">8867-4</a></td><td>Heart rate</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/Loinc-Pulse-vs"/>
+  <version value="0.1.0"/>
+  <name value="LOINCpulserateVS"/>
+  <title value="Loinc"/>
+  <status value="active"/>
+  <date value="2022-12-01T10:36:50+01:00"/>
+  <publisher value="ehelse"/>
+  <contact>
+    <name value="ehelse"/>
+    <telecom>
+      <system value="url"/>
+      <value value="ehelse.no"/>
+    </telecom>
+  </contact>
+  <description value="Loinc codes representing pulse rate."/>
+  <copyright value="This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <filter>
+        <property value="ancestor"/>
+        <op value="="/>
+        <value value="8867-4"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="8867-4"/>
+        <display value="Heart rate"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

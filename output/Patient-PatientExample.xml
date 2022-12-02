@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PatientExample"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/Apatient-profile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Ola A. Normann </b> male, DoB: 1914-05-17</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail:</td><td colspan="3">123 Snøveien Vinterby 12345 NO </td></tr><tr><td style="background-color: #f3f5da" title="Languages spoken">Language:</td><td colspan="3"><span title="Codes: {urn:ietf:bcp:47 no-NO}">Norwegian</span></td></tr><tr><td style="background-color: #f3f5da" title="Patient contact">Contact</td><td colspan="3"><ul><li>ph: 555-555-5555(HOME)</li><li><a href="mailto:ola.normann@example.com">ola.normann@example.com</a></li></ul></td></tr></table></div>
+  </text>
+  <name>
+    <family value="Normann"/>
+    <given value="Ola"/>
+    <given value="A."/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1914-05-17"/>
+  <address>
+    <line value="123 Snøveien"/>
+    <city value="Vinterby"/>
+    <postalCode value="12345"/>
+    <country value="NO"/>
+  </address>
+  <contact>
+    <telecom>
+      <system value="phone"/>
+      <value value="555-555-5555"/>
+      <use value="home"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ola.normann@example.com"/>
+    </telecom>
+  </contact>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47"/>
+        <code value="no-NO"/>
+        <display value="Norwegian (Region=Norway)"/>
+      </coding>
+      <text value="Norwegian"/>
+    </language>
+  </communication>
+</Patient>
